@@ -13,7 +13,9 @@ namespace Data.Mapping.Societes
     {
         public void Configure(EntityTypeBuilder<Pays> builder)
         {
-            
+            builder.ToTable("Pays");
+            builder.HasKey(x => x.PaysId);
+            builder.HasData(new Pays { PaysId = 101, Code2car = "FR", Code3car = "FRS" });
         }
     }
 }

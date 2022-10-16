@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaneteApi", "PlaneteApi\PlaneteApi.csproj", "{4377E8F4-7548-4096-8E7C-F6B82F62613F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlaneteApi", "PlaneteApi\PlaneteApi.csproj", "{4377E8F4-7548-4096-8E7C-F6B82F62613F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{19A2E8F8-0156-420D-B54C-5FE0734DEC15} = {19A2E8F8-0156-420D-B54C-5FE0734DEC15}
 		{434C4343-589F-40CE-A9A8-3D0263BAE0DF} = {434C4343-589F-40CE-A9A8-3D0263BAE0DF}
 		{669497C4-A817-4C7E-AB77-F10D33D69C38} = {669497C4-A817-4C7E-AB77-F10D33D69C38}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{19A2E8F8-0156-420D-B54C-5FE0734DEC15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{19A2E8F8-0156-420D-B54C-5FE0734DEC15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{434C4343-589F-40CE-A9A8-3D0263BAE0DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{434C4343-589F-40CE-A9A8-3D0263BAE0DF}"
 	ProjectSection(ProjectDependencies) = postProject
 		{19A2E8F8-0156-420D-B54C-5FE0734DEC15} = {19A2E8F8-0156-420D-B54C-5FE0734DEC15}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{669497C4-A817-4C7E-AB77-F10D33D69C38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "Facade\Facade.csproj", "{669497C4-A817-4C7E-AB77-F10D33D69C38}"
 	ProjectSection(ProjectDependencies) = postProject
 		{19A2E8F8-0156-420D-B54C-5FE0734DEC15} = {19A2E8F8-0156-420D-B54C-5FE0734DEC15}
 		{434C4343-589F-40CE-A9A8-3D0263BAE0DF} = {434C4343-589F-40CE-A9A8-3D0263BAE0DF}
@@ -25,7 +25,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{87A7CA62-F64B-41EF-912B-99E8F22DBD38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Synchronisation", "Synchronisation\Synchronisation.csproj", "{A2FAF74D-29FE-4428-8431-DA96F060D651}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Synchronisation", "Synchronisation\Synchronisation.csproj", "{A2FAF74D-29FE-4428-8431-DA96F060D651}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaneteClient", "PlaneteClient\PlaneteClient.csproj", "{92F9714B-1D44-4D19-9D44-B5E96588601A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{A2FAF74D-29FE-4428-8431-DA96F060D651}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2FAF74D-29FE-4428-8431-DA96F060D651}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2FAF74D-29FE-4428-8431-DA96F060D651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92F9714B-1D44-4D19-9D44-B5E96588601A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92F9714B-1D44-4D19-9D44-B5E96588601A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92F9714B-1D44-4D19-9D44-B5E96588601A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92F9714B-1D44-4D19-9D44-B5E96588601A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4377E8F4-7548-4096-8E7C-F6B82F62613F} = {87A7CA62-F64B-41EF-912B-99E8F22DBD38}
 		{A2FAF74D-29FE-4428-8431-DA96F060D651} = {87A7CA62-F64B-41EF-912B-99E8F22DBD38}
+		{92F9714B-1D44-4D19-9D44-B5E96588601A} = {87A7CA62-F64B-41EF-912B-99E8F22DBD38}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6C4198E-515C-450E-8F7F-47E5A7691CF3}

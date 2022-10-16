@@ -12,3 +12,6 @@ Data/bin/
 Synchronisation/bin/
 Domain/bin/
 Domain/obj/
+PlaneteClient/bin/
+PlaneteClient/obj/
+PlaneteClient/wwwroot/lib/
