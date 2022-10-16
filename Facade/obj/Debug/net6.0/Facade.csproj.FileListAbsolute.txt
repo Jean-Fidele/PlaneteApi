@@ -1,0 +1,12 @@
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Facade\bin\Debug\net6.0\Facade.deps.json
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Facade\bin\Debug\net6.0\Facade.dll
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Facade\bin\Debug\net6.0\Facade.pdb
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Facade\obj\Debug\net6.0\Facade.csproj.AssemblyReference.cache
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Facade\obj\Debug\net6.0\Facade.GeneratedMSBuildEditorConfig.editorconfig
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Facade\obj\Debug\net6.0\Facade.AssemblyInfoInputs.cache
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Facade\obj\Debug\net6.0\Facade.AssemblyInfo.cs
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Facade\obj\Debug\net6.0\Facade.csproj.CoreCompileInputs.cache
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Facade\obj\Debug\net6.0\Facade.dll
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Facade\obj\Debug\net6.0\refint\Facade.dll
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Facade\obj\Debug\net6.0\Facade.pdb
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Facade\obj\Debug\net6.0\ref\Facade.dll

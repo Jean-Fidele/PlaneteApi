@@ -1,0 +1,12 @@
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Domain\bin\Debug\net6.0\Domain.deps.json
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Domain\bin\Debug\net6.0\Domain.dll
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Domain\bin\Debug\net6.0\Domain.pdb
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Domain\obj\Debug\net6.0\Domain.dll
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Domain\obj\Debug\net6.0\refint\Domain.dll
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Domain\obj\Debug\net6.0\Domain.pdb
+E:\APPLICATIONS\01_DOTNET\01_MVC\PlaneteApi\Domain\obj\Debug\net6.0\ref\Domain.dll
