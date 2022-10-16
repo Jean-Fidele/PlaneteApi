@@ -1,0 +1,43 @@
+﻿- Microsoft.EntityFrameworkCore
+- Microsoft.EntityFrameworkCore.Relationnal
+- Microsoft.EntityFrameworkCore.Abstractions
+- Microsoft.EntityFrameworkCore.Analizers
+- Microsoft.EntityFrameworkCore.Design
+- Microsoft.EntityFrameworkCore.SqlServer
+- Microsoft.EntityFrameworkCore.Tools
+- Microsoft.EntityFrameworkCore.InMemory
+- Microsoft.EntityFrameworkCore.Sqlite
+- Microsoft.EntityFrameworkCore.Sqlite.Core
+- Microsoft.EntityFrameworkCore.Relational.Design
+- Microsoft.EntityFrameworkCore.Proxies
+- Microsoft.EntityFrameworkCore.Sqlite.Design
+- Microsoft.EntityFrameworkCore.SqlServer.Design
+- Microsoft.EntityFrameworkCore.Cosmos
+
+- Microsoft.AspNetCore
+- Microsoft.AspNetCore.Http.Features
+- Microsoft.AspNetCore.Http.Abstractions
+- Microsoft.AspNetCore.Identity.EntityFrameworkCore
+- Microsoft.AspNetCore.Hosting.Abstractions
+- Microsoft.AspNetCore.WebUtilities
+- Microsoft.AspNetCore.Http.Extensions
+- Microsoft.AspNetCore.Authorization
+- Microsoft.AspNetCore.Authentication.OpenIdConnect
+- Microsoft.AspNetCore.Mvc.Cors
+- Microsoft.AspNetCore.Mvc.RazorPages
+- Microsoft.AspNetCore.Localization
+- Microsoft.AspNetCore.Authentication.Cookies
+- Microsoft.AspNetCore.Mvc.Versioning
+- Microsoft.AspNetCore.Identity
+- Microsoft.AspNetCore.SignalR.Common
+- Microsoft.AspNetCore.Http.Connections.Common
+- Microsoft.AspNetCore.Metadata
+- Microsoft.AspNetCore.SignalR.Protocols.Json
+- Microsoft.AspNetCore.Authentication.OAuth
+- Microsoft.AspNetCore.Authentication.Google
+- Microsoft.AspNetCore.SpaServices
+- Microsoft.AspNetCore.Authentication.MicrosoftAccount
+- Microsoft.AspNetCore.NodeServices
+
+
+

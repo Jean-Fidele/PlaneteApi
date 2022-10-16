@@ -1,1 +1,11 @@
 *.suo
+*.dll
+PlaneteApi/bin/Debug/
+Hosts/obj/
+Data/obj/
+Hosts/PlaneteApi/obj/
+PlaneteApi/obj/
+Synchronisation/obj/
+Data/bin/Debug/net6.0/Domain.pdb
+Data/bin/
+.vs/
