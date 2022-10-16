@@ -1,10 +1,5 @@
-﻿using Data.Mapping;
+﻿using Data.Mapping.Societes;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Data.Context
 {
@@ -17,7 +12,20 @@ namespace Data.Context
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            builder.ApplyConfiguration(new DomaineMap());
+            builder.ApplyConfiguration(new CategComptableMap());
+            builder.ApplyConfiguration(new CategFacturationMap());
+            builder.ApplyConfiguration(new CategHotelMap());
+            builder.ApplyConfiguration(new CiviliteMap());
+            builder.ApplyConfiguration(new CollaborateurMap());
+            builder.ApplyConfiguration(new CompteMap());
+            builder.ApplyConfiguration(new ContactMap());
+            builder.ApplyConfiguration(new DepartementMap());
+            builder.ApplyConfiguration(new FormeJuridiqueMap());
+            builder.ApplyConfiguration(new MetierMap());
+            builder.ApplyConfiguration(new PaysMap());
+            builder.ApplyConfiguration(new ProfessionnelMap());
+            builder.ApplyConfiguration(new ServiceMap());
+            builder.ApplyConfiguration(new SocieteMap());
             base.OnModelCreating(builder);
         }
     }
