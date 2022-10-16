@@ -10,3 +10,5 @@ Data/bin/Debug/net6.0/Domain.pdb
 Data/bin/
 .vs/
 Synchronisation/bin/
+Domain/bin/
+Domain/obj/
