@@ -1,7 +1,13 @@
-﻿using Data.Mapping.Produits;
+﻿using Data.Mapping;
+using Data.Mapping.Banques;
+using Data.Mapping.Devises;
+using Data.Mapping.Frais;
+using Data.Mapping.Objets;
+using Data.Mapping.Produits;
 using Data.Mapping.Reservations;
 using Data.Mapping.Societes;
 using Microsoft.EntityFrameworkCore;
+using DomaineMap = Data.Mapping.Objets.DomaineMap;
 
 namespace Data.Context
 {
@@ -53,6 +59,34 @@ namespace Data.Context
             builder.ApplyConfiguration(new PromoTarifMap());
             builder.ApplyConfiguration(new TypetiersMap());
             builder.ApplyConfiguration(new TypetiersTarifMap());
+
+            /* Objets*/
+            builder.ApplyConfiguration(new DomaineMap());
+            builder.ApplyConfiguration(new FamilleMap());
+            builder.ApplyConfiguration(new MaintenanceMap());
+            builder.ApplyConfiguration(new ObjetMap());
+            builder.ApplyConfiguration(new ObjetProduitMap());
+            builder.ApplyConfiguration(new OptionListMap());
+            builder.ApplyConfiguration(new OptionMap());
+            builder.ApplyConfiguration(new OptionsObjetsMap());
+            builder.ApplyConfiguration(new OutillageMap());
+            builder.ApplyConfiguration(new TypeobjetMap());
+            builder.ApplyConfiguration(new UtiliseMap());
+
+            /* Frais */
+            builder.ApplyConfiguration(new FraisMap());
+            builder.ApplyConfiguration(new TaxeListeMap());
+
+            /* Devise */
+            builder.ApplyConfiguration(new CotationDeviseMap());
+            builder.ApplyConfiguration(new DeviseMap());
+            builder.ApplyConfiguration(new TenuCptDeviseMap());
+            builder.ApplyConfiguration(new UniteMap());
+
+            /* Banque */
+            builder.ApplyConfiguration(new BanqueMap());
+            builder.ApplyConfiguration(new BanqueStructureMap());
+
             base.OnModelCreating(builder);
         }
     }

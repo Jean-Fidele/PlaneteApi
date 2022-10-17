@@ -13,7 +13,15 @@ namespace Data.Mapping.Societes
     {
         public void Configure(EntityTypeBuilder<CategHotel> builder)
         {
-            
+            builder.ToTable("CategHotel");
+            builder.HasKey(x => x.CategHotelId);
+            builder.HasData(
+               new CategHotel { CategHotelId = 101, Libelle = "1 étoile" },
+               new CategHotel { CategHotelId = 101, Libelle = "2 étoiles" },
+               new CategHotel { CategHotelId = 101, Libelle = "3 étoiles" },
+               new CategHotel { CategHotelId = 101, Libelle = "4 étoiles" },
+               new CategHotel { CategHotelId = 101, Libelle = "5 étoiles" }
+            );
         }
     }
 }
