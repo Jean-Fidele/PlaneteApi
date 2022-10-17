@@ -5,7 +5,7 @@ namespace PlaneteApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class DomainController : ControllerBase
+    public class DomaineController : ControllerBase
     {
         public async Task<ActionResult> Index()
         {
