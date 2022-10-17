@@ -1,4 +1,5 @@
 using Data.Context;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,8 @@ builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer(connectionString, x => x.MigrationsAssembly("Data"))
            .LogTo(Console.WriteLine, LogLevel.Information)
 );
+
+builder.Services.AddMediatR(typeof(Facade.Societes.Societe.GetAll));
 
 var app = builder.Build();
 

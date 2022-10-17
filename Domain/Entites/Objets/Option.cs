@@ -10,7 +10,7 @@ namespace Domain.Entites.Objets
             OptionsObjets = new HashSet<OptionsObjets>();
         }
 
-        public int OptionobjetId { get; set; }
+        public int OptionId { get; set; }
         public int? DomaineId { get; set; }
         public string Code { get; set; }
         public string Libelle { get; set; }

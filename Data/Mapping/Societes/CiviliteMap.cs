@@ -13,7 +13,14 @@ namespace Data.Mapping.Societes
     {
         public void Configure(EntityTypeBuilder<Civilite> builder)
         {
-            
+            builder.ToTable("Civilite");
+            builder.HasKey(x => x.CiviliteId);
+            builder.HasData(
+                new Civilite { CiviliteId = 1, Code = "M", Libelle = "Monsieur" },
+                new Civilite { CiviliteId = 2, Code = "Mme", Libelle = "Madame" },
+                new Civilite { CiviliteId = 3, Code = "Mlle", Libelle = "Mademoiselle" },
+                new Civilite { CiviliteId = 4, Code = "Mx", Libelle = "Neutre" }
+            );
         }
     }
 }

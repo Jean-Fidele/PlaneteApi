@@ -16,11 +16,11 @@ namespace Data.Mapping.Societes
             builder.ToTable("CategHotel");
             builder.HasKey(x => x.CategHotelId);
             builder.HasData(
-               new CategHotel { CategHotelId = 101, Libelle = "1 étoile" },
-               new CategHotel { CategHotelId = 101, Libelle = "2 étoiles" },
-               new CategHotel { CategHotelId = 101, Libelle = "3 étoiles" },
-               new CategHotel { CategHotelId = 101, Libelle = "4 étoiles" },
-               new CategHotel { CategHotelId = 101, Libelle = "5 étoiles" }
+               new CategHotel { CategHotelId = 1, Libelle = "1 étoile" },
+               new CategHotel { CategHotelId = 2, Libelle = "2 étoiles" },
+               new CategHotel { CategHotelId = 3, Libelle = "3 étoiles" },
+               new CategHotel { CategHotelId = 4, Libelle = "4 étoiles" },
+               new CategHotel { CategHotelId = 5, Libelle = "5 étoiles" }
             );
         }
     }

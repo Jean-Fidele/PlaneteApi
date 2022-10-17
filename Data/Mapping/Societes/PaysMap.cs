@@ -66,7 +66,7 @@ namespace Data.Mapping.Societes
                 new Pays { PaysId = 48, Code2car = "CO", Code3car = "COL", CodeChiffre = 170, Fuseauhoraire = null, LibelleENG = "COLOMBIA", LibelleFR = "COLOMBIE" },
                 new Pays { PaysId = 49, Code2car = "KM", Code3car = "COM", CodeChiffre = 174, Fuseauhoraire = null, LibelleENG = "COMOROS", LibelleFR = "COMORES" },
                 new Pays { PaysId = 50, Code2car = "CV", Code3car = "CPV", CodeChiffre = 132, Fuseauhoraire = null, LibelleENG = "CAPE VERDE", LibelleFR = "CAP VERT" },
-                new Pays { PaysId = 51, Code2car = "CR", Code3car = "CRI", CodeChiffre = 188, Fuseauhoraire = null, LibelleENG = "COSTA RICA", LibelleFR = "COSTA RICA" }
+                new Pays { PaysId = 51, Code2car = "CR", Code3car = "CRI", CodeChiffre = 188, Fuseauhoraire = null, LibelleENG = "COSTA RICA", LibelleFR = "COSTA RICA" },
                 new Pays { PaysId = 52, Code2car = "CU", Code3car = "CUB", CodeChiffre = 192, Fuseauhoraire = null, LibelleENG = "CUBA", LibelleFR = "CUBA" },
                 new Pays { PaysId = 53, Code2car = "CX", Code3car = "CXR", CodeChiffre = 162, Fuseauhoraire = null, LibelleENG = "CHRISTMAS ISLAND", LibelleFR = "CHRISTMAS ISLAND" },
                 new Pays { PaysId = 54, Code2car = "KY", Code3car = "CYM", CodeChiffre = 136, Fuseauhoraire = null, LibelleENG = "CAYMAN ISLANDS", LibelleFR = "CAYMAN ISLANDS" },

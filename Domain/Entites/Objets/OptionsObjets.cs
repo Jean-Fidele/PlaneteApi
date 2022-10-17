@@ -2,7 +2,7 @@ namespace Domain.Entites.Objets
 {
     public class OptionsObjets
     {
-        public int OID_RELATION { get; set; }
+        public int OptionsObjetsId { get; set; }
         public int? ObjetId { get; set; }
         public int? OptionId { get; set; }
         public string Valeur { get; set; }

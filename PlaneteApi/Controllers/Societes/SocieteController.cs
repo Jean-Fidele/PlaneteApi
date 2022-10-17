@@ -1,12 +1,31 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 
 namespace PlaneteApi.Controllers.Societes
 {
-    public class SocieteController : Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class SocieteController : ControllerBase
     {
-        public IActionResult Index()
+        protected readonly IMediator Mediator;
+        public SocieteController(IMediator mediator)
         {
-            return View();
+            Mediator = mediator;
+        }
+
+        [HttpGet()]
+        public async Task<IActionResult> Get()
+        {
+            var res = await Mediator.Send(new Facade.Societes.Societe
+                                    .GetAll.Request { Username = "Fidele" });
+
+            if(res.Societes.Count() <= 0)
+            {
+                return NotFound("The element is not find in the list.");
+            }
+
+            return Ok(res);
         }
     }
 }
