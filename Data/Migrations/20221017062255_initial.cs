@@ -4,13 +4,10 @@
 
 namespace Data.Migrations
 {
-    public partial class createtablesocietes : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Domain");
-
             migrationBuilder.CreateTable(
                 name: "CategComptable",
                 columns: table => new
@@ -354,6 +351,22 @@ namespace Data.Migrations
                         principalColumn: "SocieteId");
                 });
 
+            migrationBuilder.InsertData(
+                table: "Pays",
+                columns: new[] { "PaysId", "Code2car", "Code3car", "CodeChiffre", "Fuseauhoraire", "LibelleENG", "LibelleFR" },
+                values: new object[,]
+                {
+                    { 1, "AW", "ABW", 533, null, "ARUBA", "ARUBA" },
+                    { 2, "AF", "AFG", 4, null, "AFGHANISTAN", "AFGHANISTAN" },
+                    { 3, "AO", "AGO", 24, null, "ANGOLA", "ANGOLA" },
+                    { 4, "AI", "AIA", 660, null, "ANGUILLA", "ANGUILLA" },
+                    { 5, "AL", "ALB", 8, null, "ALBANIE", "ALBANIE" },
+                    { 6, "AD", "AND", 20, null, "ANDORRES", "ANDORRES" },
+                    { 7, "AN", "ANT", 530, null, "NETHERLANDS ANTILLES", "NETHERLANDS ANTILLES" },
+                    { 8, "AE", "ARE", 784, null, "EMIRATS ARABES UNIS", "EMIRATS ARABES UNIS" },
+                    { 9, "AR", "ARG", 32, null, "ARGENTINE", "ARGENTINE" }
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_CategFacturation_CompteurId",
                 table: "CategFacturation",
@@ -464,20 +477,6 @@ namespace Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "Pays");
-
-            migrationBuilder.CreateTable(
-                name: "Domain",
-                columns: table => new
-                {
-                    DomaineId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Code = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Libelle = table.Column<string>(type: "nvarchar(max)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Domain", x => x.DomaineId);
-                });
         }
     }
 }

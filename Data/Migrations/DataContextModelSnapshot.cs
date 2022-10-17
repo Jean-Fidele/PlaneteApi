@@ -359,7 +359,90 @@ namespace Data.Migrations
 
                     b.HasKey("PaysId");
 
-                    b.ToTable("Pays");
+                    b.ToTable("Pays", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            PaysId = 1,
+                            Code2car = "AW",
+                            Code3car = "ABW",
+                            CodeChiffre = 533,
+                            LibelleENG = "ARUBA",
+                            LibelleFR = "ARUBA"
+                        },
+                        new
+                        {
+                            PaysId = 2,
+                            Code2car = "AF",
+                            Code3car = "AFG",
+                            CodeChiffre = 4,
+                            LibelleENG = "AFGHANISTAN",
+                            LibelleFR = "AFGHANISTAN"
+                        },
+                        new
+                        {
+                            PaysId = 3,
+                            Code2car = "AO",
+                            Code3car = "AGO",
+                            CodeChiffre = 24,
+                            LibelleENG = "ANGOLA",
+                            LibelleFR = "ANGOLA"
+                        },
+                        new
+                        {
+                            PaysId = 4,
+                            Code2car = "AI",
+                            Code3car = "AIA",
+                            CodeChiffre = 660,
+                            LibelleENG = "ANGUILLA",
+                            LibelleFR = "ANGUILLA"
+                        },
+                        new
+                        {
+                            PaysId = 5,
+                            Code2car = "AL",
+                            Code3car = "ALB",
+                            CodeChiffre = 8,
+                            LibelleENG = "ALBANIE",
+                            LibelleFR = "ALBANIE"
+                        },
+                        new
+                        {
+                            PaysId = 6,
+                            Code2car = "AD",
+                            Code3car = "AND",
+                            CodeChiffre = 20,
+                            LibelleENG = "ANDORRES",
+                            LibelleFR = "ANDORRES"
+                        },
+                        new
+                        {
+                            PaysId = 7,
+                            Code2car = "AN",
+                            Code3car = "ANT",
+                            CodeChiffre = 530,
+                            LibelleENG = "NETHERLANDS ANTILLES",
+                            LibelleFR = "NETHERLANDS ANTILLES"
+                        },
+                        new
+                        {
+                            PaysId = 8,
+                            Code2car = "AE",
+                            Code3car = "ARE",
+                            CodeChiffre = 784,
+                            LibelleENG = "EMIRATS ARABES UNIS",
+                            LibelleFR = "EMIRATS ARABES UNIS"
+                        },
+                        new
+                        {
+                            PaysId = 9,
+                            Code2car = "AR",
+                            Code3car = "ARG",
+                            CodeChiffre = 32,
+                            LibelleENG = "ARGENTINE",
+                            LibelleFR = "ARGENTINE"
+                        });
                 });
 
             modelBuilder.Entity("Domain.Entites.Societes.Professionnel", b =>

@@ -1,5 +1,5 @@
 ﻿- dotnet ef migrations add create-table-societes --startup-project ../PlaneteApi/PlaneteApi.csproj
-- dotnet ef Databse update --startup-project ../PlaneteApi/PlaneteApi.csproj 
+- dotnet ef Database update --startup-project ../PlaneteApi/PlaneteApi.csproj 
 
 - Microsoft.EntityFrameworkCore
 - Microsoft.EntityFrameworkCore.Relationnal
