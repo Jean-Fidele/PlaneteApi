@@ -9,9 +9,9 @@ namespace Facade.Societes.Societe
     {
         public class Request : IRequest<Result>
         {
-            public string? PaysId { get; set; }
-            public string? FormeJuridiqueId { get; set; }
-            public string? CategHotel { get; set; }
+            public int? PaysId { get; set; }
+            public int? FormeJuridiqueId { get; set; }
+            public int? CategHotelId { get; set; }
         }
 
         public class Handler : IRequestHandler<Request, Result>
@@ -24,8 +24,19 @@ namespace Facade.Societes.Societe
 
             public async Task<Result> Handle(Request request, CancellationToken cancellationToken)
             {
-                var societes = await ctx.Set<Domain.Entites.Societes.Societe>()
-                                     .ToListAsync(cancellationToken);
+                var societesReq = ctx.Set<Domain.Entites.Societes.Societe>().AsQueryable();
+
+                if (request.CategHotelId != null)
+                {
+                    societesReq = societesReq.Where(x => x.CategHotelId == request.CategHotelId);
+                }
+
+                if(request.FormeJuridiqueId != null)
+                {
+                    societesReq = societesReq.Where(x => x.FormeJuridiqueId == request.FormeJuridiqueId);
+                }
+
+                var societes = await societesReq.ToListAsync(cancellationToken);
 
                 return new Result { Societes = societes };
             }

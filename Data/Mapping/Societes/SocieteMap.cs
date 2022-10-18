@@ -13,7 +13,20 @@ namespace Data.Mapping.Societes
     {
         public void Configure(EntityTypeBuilder<Societe> builder)
         {
-            
+            builder.ToTable("Societe");
+            builder.HasKey(x => x.SocieteId);
+            builder.HasData(new Societe
+            {
+                SocieteId = 1, 
+                Nom = "O3 Consulting", 
+                Adresse = "Analamahitsy", 
+                AdressCompl = "Ambohibao",
+                Capital = 10000, 
+                CategHotelId = 1, 
+                Email = "fidele999@gmail.com", 
+                PaysId = 1, 
+                FormeJuridiqueId = 101
+            });
         }
     }
 }
