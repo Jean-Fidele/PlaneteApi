@@ -19,3 +19,5 @@ Facade/obj/
 Facade/bin/
 .gitignore.orig
 PlaneteClient/wwwroot/dist/
+PlaneteClient/wwwroot/plugins/
+PlaneteClient/wwwroot/img/Fidele.jpg
