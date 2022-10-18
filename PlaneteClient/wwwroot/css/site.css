@@ -16,3 +16,19 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.toper{
+    float: right;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 6px 10px; /* e.g. change 8x to 4px here */
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: black;
+    background-color: aqua;
+    border-color: #007bff;
+}
+
