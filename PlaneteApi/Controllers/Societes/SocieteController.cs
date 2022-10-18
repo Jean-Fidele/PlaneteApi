@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Facade.Societes.Societe;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 
@@ -15,10 +16,13 @@ namespace PlaneteApi.Controllers.Societes
         }
 
         [HttpGet()]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get([FromQuery] Facade.Societes.Societe.GetAll.Request request)
         {
-            var res = await Mediator.Send(new Facade.Societes.Societe
-                                    .GetAll.Request { Username = "Fidele" });
+            var res = await Mediator.Send(new GetAll.Request { 
+                                                    PaysId = request.PaysId, 
+                                                    CategHotel= request.CategHotel, 
+                                                    FormeJuridiqueId = request.FormeJuridiqueId 
+                                         });
 
             if(res.Societes.Count() <= 0)
             {

@@ -18,3 +18,4 @@ PlaneteClient/wwwroot/lib/
 Facade/obj/
 Facade/bin/
 .gitignore.orig
+PlaneteClient/wwwroot/dist/

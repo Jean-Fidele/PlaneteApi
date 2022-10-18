@@ -9,7 +9,9 @@ namespace Facade.Societes.Societe
     {
         public class Request : IRequest<Result>
         {
-            public string? Username { get; set; }
+            public string? PaysId { get; set; }
+            public string? FormeJuridiqueId { get; set; }
+            public string? CategHotel { get; set; }
         }
 
         public class Handler : IRequestHandler<Request, Result>
@@ -33,7 +35,7 @@ namespace Facade.Societes.Societe
         {
             public Validator()
             {
-                RuleFor(x => x.Username).Empty();
+                RuleFor(x => x.PaysId).Empty();
             }
         }
 
