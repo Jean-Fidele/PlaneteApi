@@ -24,9 +24,9 @@ namespace PlaneteClientB.Areas.Societes.Controllers
                 throw new Exception();
 
             var SocieteJson = response.Content.ReadAsStringAsync().Result;
-            var societes = JsonConvert.DeserializeObject<List<Societe>>(SocieteJson);
+            var societes = JsonConvert.DeserializeObject<Facade.Societes.Societe.GetAll.Result> (SocieteJson);
 
-            return View(societes);
+            return View(societes.societeModels);
         }
 
         // GET: SocieteController/Details/5

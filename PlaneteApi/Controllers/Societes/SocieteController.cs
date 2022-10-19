@@ -26,12 +26,12 @@ namespace PlaneteApi.Controllers.Societes
                                                     FormeJuridiqueId = request.FormeJuridiqueId 
                                          });
             
-            if(res.Societes.Count() <= 0)
+            if(res.TotalRows <= 0)
             {
                 return NotFound("The element is not find in the list.");
             }
 
-            return Ok(res.Societes); //new GetAll.Result { Societes = res.Societes }
+            return Ok(res);
         }
     }
 }
