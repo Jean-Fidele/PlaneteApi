@@ -15,6 +15,9 @@ namespace Data.Mapping.Societes
         {
             builder.ToTable("Societe");
             builder.HasKey(x => x.SocieteId);
+            builder.HasOne(x => x.FormeJuridique)
+                   .WithMany(x => x.Societes)
+                   .HasForeignKey(x=>x.FormeJuridiqueId);
             builder.HasData(new Societe
             {
                 SocieteId = 1, 

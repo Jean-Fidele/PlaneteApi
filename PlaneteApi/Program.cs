@@ -15,6 +15,7 @@ builder.Services.AddDbContext<DataContext>(options =>
 );
 
 builder.Services.AddMediatR(typeof(Facade.Societes.Societe.GetAll));
+builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();
 
