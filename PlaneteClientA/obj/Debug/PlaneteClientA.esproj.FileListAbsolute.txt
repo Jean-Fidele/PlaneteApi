@@ -1,0 +1,2 @@
+C:\Users\fidel\Documents\PROJETS\PlaneteApi\PlaneteClientA\obj\Debug\PlaneteClientA.esproj.SuggestedBindingRedirects.cache
+C:\Users\fidel\Documents\PROJETS\PlaneteApi\PlaneteClientA\obj\Debug\PlaneteClientA.esproj.CoreCompileInputs.cache
