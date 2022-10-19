@@ -14,4 +14,9 @@
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Societes\Data\" />
+    <Folder Include="Areas\Societes\Models\" />
+  </ItemGroup>
+
 </Project>

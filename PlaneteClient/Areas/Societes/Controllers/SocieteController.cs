@@ -5,8 +5,9 @@ using System;
 using Newtonsoft.Json;
 using Domain.Entites.Societes;
 
-namespace PlaneteClient.Controllers
+namespace PlaneteClientB.Areas.Societes.Controllers
 {
+    [Area("Societes")]
     public class SocieteController : Controller
     {
         // GET: SocieteController
@@ -24,7 +25,7 @@ namespace PlaneteClient.Controllers
 
             var SocieteJson = response.Content.ReadAsStringAsync().Result;
             var societes = JsonConvert.DeserializeObject<List<Societe>>(SocieteJson);
-            
+
             return View(societes);
         }
 
